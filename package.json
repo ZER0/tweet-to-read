@@ -1,0 +1,12 @@
+{
+  "title": "Tweet To Read",
+  "name": "tweet-to-read",
+  "version": "0.0.1",
+  "description": "Add tweet's link to Firefox's reading list",
+  "main": "index.js",
+  "author": "ZER0",
+  "engines": {
+    "firefox": ">=33.0a1"
+  },
+  "license": "MIT"
+}

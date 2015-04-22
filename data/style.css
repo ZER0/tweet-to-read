@@ -1,0 +1,24 @@
+.ProfileTweet-action--reading button.is-in-list .Icon--reading,
+.ProfileTweet-action--reading:hover .Icon--reading {
+  background: #6489C9;
+}
+
+/*
+  Using `filter` and `mix-blend-mod` to "colorize" the svg icon.
+  That's OK only with white or light background.
+*/
+.ProfileTweet-action--reading .Icon--reading {
+  background: #CCD6DD;
+  mix-blend-mode: multiply;
+}
+.ProfileTweet-action--reading .Icon--reading::after {
+  display: block;
+  content: "";
+  width: 16px;
+  height: 16px;
+  background: black url(chrome://browser/skin/readerMode.svg);
+  filter:
+    invert(100%)
+    contrast(100%);
+  mix-blend-mode: lighten;
+}
